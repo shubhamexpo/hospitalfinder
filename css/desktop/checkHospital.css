@@ -1,0 +1,212 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+#menu > .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 6rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  box-shadow: 0 8px 6px -6px black;
+}
+.logo > img {
+  width: 113px;
+  height: 36px;
+  margin-top: 0.8rem;
+}
+.logo > p {
+  margin-top: 0.8rem;
+  color: rgb(89, 89, 89);
+}
+.pagesLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 300px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.pagesLink > a {
+  margin: 0 3rem;
+  margin-top: 2rem;
+  color: rgb(89, 89, 89);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pagesLink > a:first-child {
+  color: #0072ff;
+  margin-top: 3rem;
+}
+.pagesLink > a > p {
+  font-size: 1.3rem;
+}
+.pagesLink > a > p > span {
+  font-size: 1.3rem;
+  color: rgb(89, 89, 89);
+  margin: 1rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 6rem;
+}
+#navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.searchBar > form {
+  display: flex;
+  flex-direction: row;
+}
+.searchBar > form > input {
+  width: 15rem;
+  height: 3rem;
+  border: 1px solid rgb(89, 89, 89);
+  font-size: 0.9rem;
+  outline: none;
+  padding-left: 1rem;
+}
+.searchBar > form > button {
+  width: 3rem;
+  background-color: #0072ff;
+}
+.login > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.alert {
+  display: flex;
+  flex-direction: row;
+}
+.alert > div > i {
+  position: absolute;
+  font-size: 1.5rem;
+}
+.alert > div > p {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.9rem;
+}
+
+.login {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login > i {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.container {
+  background-color: rgb(229, 229, 229);
+}
+.container > .category > p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.category > form {
+  display: flex;
+  flex-direction: column;
+}
+.category > form > .options {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.category > form > .options > select,
+button {
+  cursor: pointer;
+  width: 8rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  border: none;
+}
+.data > .tabel1 {
+  margin: 0 2rem;
+  margin-top: 2rem;
+}
+.data > .tabel1 > .head > tr > td {
+  width: 16rem;
+  height: 3rem;
+  margin: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+.data > .tabel1 > .body > tr {
+  background-color: #fff;
+  width: 16rem;
+  height: 6rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+.data > .tabel1 > .body > tr > #name {
+  color: #0072ff;
+}
+.data > .tabel1 > .body > tr > #phone {
+  color: green;
+}
+.data > .tabel1 > .body > tr > #email {
+  color: red;
+}
+.data > .tabel1 > .body > tr > #edit {
+  width: 16rem;
+}
+.data > .tabel1 > .body > tr > #edit > span > i {
+  font-size: 1.3rem;
+}
+.data > .tabel1 > .body > tr > #edit > span {
+  margin: 0 1.2rem;
+}
