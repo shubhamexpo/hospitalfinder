@@ -2,17 +2,15 @@
 $msg = "";
 if(isset($_POST['confirm'])){
     $uemail=$_POST['uemail'];
+    $email=$_POST['email'];
     $name = $_POST['name'];
     $body = $_POST['message'];
     $msg = $body;
     $msg = wordwrap($msg,70);
-    if(mail("skd8238@gmail.com","Some one send message from website",$msg,$uemail))
+    if(mail($email,"Some one send message from website",$msg,$uemail))
     {
         header("location:./index.php");
     }
-    else{
-        echo "erroe";
-    }  
 }
 ?>
 
