@@ -67,6 +67,7 @@ include('./database/db.php');
             <form method="POST">
               <div class="options">
                 <select name="states_name" id="">
+                <option value="-1">State</option>
                 <?php
                 $q2 = "SELECT * FROM states";
                 $query2 = mysqli_query($connection,$q2);
@@ -79,6 +80,7 @@ include('./database/db.php');
                 ?>   
                 </select>
                 <select name="citys_name" id="">
+                <option value="-1">City</option>
                 <?php
                 $q2 = "SELECT * FROM citys";
                 $query3 = mysqli_query($connection,$q2);
@@ -91,6 +93,7 @@ include('./database/db.php');
                 ?>   
                 </select>
                 <select name="areas_name" id="">
+                <option value="-1">Area</option>
                 <?php
                 $q2 = "SELECT * FROM area";
                 $query4 = mysqli_query($connection,$q2);
@@ -103,6 +106,7 @@ include('./database/db.php');
                 ?>   
                 </select>
                 <select name="Problem" id="">
+                <option value="-1">Health Problem</option>
                 <?php
                 $q2 = "SELECT * FROM treatments";
                 $query5 = mysqli_query($connection,$q2);
@@ -163,6 +167,7 @@ if(isset($_POST['searchHospital'])){
         <div class="contact">
           <button id="ambulance" href="tel:<?php echo $res12['hospital_phone_number'];?>">CALL Ambulance</button>
           <a href="./view/hospitalPublicProfile.php?hospital_user_name=<?php echo $res12['hospital_user_name'];?>"><button id="profile">See Hospittal Profile</button></a>
+          <a href="./bookAp.php?email=<?php echo $res12['email'];?>"><button id="profile">Book Appoinmant</button></a>
         </div>
       </div>
     </div>

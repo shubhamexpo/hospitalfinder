@@ -67,6 +67,7 @@ include('./database/db.php');
             <form method="POST">
               <div class="options">
                 <select name="states_name" id="">
+                <option value="-1">State</option>
                 <?php
                 $q2 = "SELECT * FROM states";
                 $query2 = mysqli_query($connection,$q2);
@@ -79,6 +80,7 @@ include('./database/db.php');
                 ?>   
                 </select>
                 <select name="citys_name" id="">
+                <option value="-1">City</option>
                 <?php
                 $q2 = "SELECT * FROM citys";
                 $query3 = mysqli_query($connection,$q2);
@@ -91,6 +93,7 @@ include('./database/db.php');
                 ?>   
                 </select>
                 <select name="areas_name" id="">
+                <option value="-1">Area</option>
                 <?php
                 $q2 = "SELECT * FROM area";
                 $query4 = mysqli_query($connection,$q2);
@@ -103,6 +106,7 @@ include('./database/db.php');
                 ?>   
                 </select>
                 <select name="blood_group_name" id="">
+                <option value="-1">Blood Group</option>
                 <?php
                 $q2 = "SELECT * FROM bloodAvailbility";
                 $query5 = mysqli_query($connection,$q2);

@@ -30,7 +30,7 @@ include('../database/db.php');
         >
         <a href="../view/checkHospital.php"
           ><p>
-            <span><i class="fas fa-tachometer-alt"></i></span> Dashboard
+            <span><i class="fas fa-tachometer-alt"></i></span> Hospital
           </p></a
         >
         <a href="../view/addItems.php"
