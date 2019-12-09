@@ -1,13 +1,15 @@
 const AddBloodGroup = document.querySelector('#AddBloodGroup');
 const addBloodG = document.querySelector('.addBloodG');
-AddBloodGroup.addEventListener('click',showAddBlood);
-function showAddBlood(){
+AddBloodGroup.addEventListener('click', showAddBlood);
+
+function showAddBlood() {
     addBloodG.style.display = 'flex';
 }
 
 const closeAddBloodG = document.querySelector('.closeAddBloodG');
 closeAddBloodG.addEventListener('click', closeAddBlood);
-function closeAddBlood(){
+
+function closeAddBlood() {
     addBloodG.style.display = 'none';
 }
 
@@ -16,14 +18,14 @@ const addDoctor = document.querySelector('.addDoctor');
 const addDoctorInfo = document.querySelector('.addDoctorInfo');
 const closeAddDoctorInfo = document.querySelector('.closeAddDoctorInfo');
 
-addDoctor.addEventListener('click',showAddDoctorInfo);
+addDoctor.addEventListener('click', showAddDoctorInfo);
 closeAddDoctorInfo.addEventListener('click', closeAddDoctorInfos);
 
-function showAddDoctorInfo(){
+function showAddDoctorInfo() {
     addDoctorInfo.style.display = 'flex';
 }
 
-function closeAddDoctorInfos(){
+function closeAddDoctorInfos() {
     addDoctorInfo.style.display = 'none';
 }
 
@@ -34,10 +36,11 @@ const closeEditHospitalPhoto = document.querySelector('.closeEditHospitalPhoto')
 editPhotos.addEventListener('click', showEditHospitalPhoto);
 closeEditHospitalPhoto.addEventListener('click', closeEditHospitalPhotos);
 
-function showEditHospitalPhoto(){
+function showEditHospitalPhoto() {
     editHospitalPhoto.style.display = 'flex';
 }
-function closeEditHospitalPhotos(){
+
+function closeEditHospitalPhotos() {
     editHospitalPhoto.style.display = 'none';
 }
 
@@ -49,9 +52,10 @@ const closeEditProfile = document.querySelector('.closeEditProfile');
 editProfile.addEventListener('click', showEditProfileDesign);
 closeEditProfile.addEventListener('click', closeEditProfileDesign);
 
-function showEditProfileDesign(){
+function showEditProfileDesign() {
     editProfileDesign.style.display = 'flex';
 }
-function closeEditProfileDesign(){
+
+function closeEditProfileDesign() {
     editProfileDesign.style.display = 'none';
 }

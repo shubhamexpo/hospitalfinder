@@ -164,6 +164,7 @@ if(isset($_POST['searchHospital'])){
         <div class="contact">
           <button id="ambulance" href="tel:<?php echo $res12['hospital_phone_number'];?>">CALL Hospital to Book Appoinment</button>
           <a href="./view/hospitalPublicProfile.php?hospital_user_name=<?php echo $res12['hospital_user_name'];?>"><button id="profile">See Hospittal Profile</button></a>
+          <a href="./bookAp.php?email=<?php echo $res12['email'];?>"><button id="profile">Book Appoinmant</button></a>
         </div>
       </div>
     </div>

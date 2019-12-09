@@ -225,7 +225,7 @@ include('./addDoctor.php');
         <div class="profilePhoto">
           <img 
           src="<?php if($result['profile_photo']){
-            echo $result["cover_photo"];
+            echo $result["profile_photo"];
           }else{
             
             echo './media/hospitalPhoto/hospitalCover.jpg';
@@ -259,32 +259,32 @@ include('./addDoctor.php');
               <p>Photos</p>
             <div class="listOfPhoto">
               <img
-          src="<?php if($result['cover_photo']){
-            echo $result["cover_photo"];
+          src="<?php if($result['photo1']){
+            echo $result["photo1"];
           }else{
             echo "./media/hospitalPhoto/hospital.jpg";
           }
           ?>"
                alt="" />
               <img 
-              src="<?php if($result['cover_photo']){
-            echo $result["cover_photo"];
+              src="<?php if($result['photo2']){
+            echo $result["photo2"];
           }else{
             echo "./media/hospitalPhoto/hospital.jpg";
           }
           ?>"
                alt="" />
               <img 
-              src="<?php if($result['cover_photo']){
-            echo $result["cover_photo"];
+              src="<?php if($result['photo3']){
+            echo $result["photo3"];
           }else{
             echo "./media/hospitalPhoto/hospital.jpg";
           }
           ?>"
                alt="" />
               <img 
-              src="<?php if($result['cover_photo']){
-            echo $result["cover_photo"];
+              src="<?php if($result['photo4']){
+            echo $result["photo4"];
           }else{
             echo "./media/hospitalPhoto/hospital.jpg";
           }

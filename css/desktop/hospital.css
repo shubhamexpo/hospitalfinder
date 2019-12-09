@@ -6,45 +6,53 @@
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
   cursor: pointer;
   color: #fff;
 }
+
 button {
   cursor: pointer;
   outline: none;
   border: none;
   font-size: 1rem;
 }
-p{
+
+p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-  'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
 body {
   background-color: rgb(233, 235, 238);
 }
+
 .coverPhoto {
   margin: 0 5rem;
   position: absolute;
   z-index: -1;
 }
-.coverPhoto > #coverPhoto {
+
+.coverPhoto>#coverPhoto {
   width: 80rem;
   height: 20rem;
   z-index: -1;
 }
+
 .profile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.profilePhoto{
+
+.profilePhoto {
   position: relative;
 }
-.profilePhoto > img {
+
+.profilePhoto>img {
   position: absolute;
   width: 15rem;
   height: 15rem;
@@ -53,7 +61,8 @@ body {
   margin-top: 8rem;
   margin-left: 7rem;
 }
-#editProfilePhoto{
+
+#editProfilePhoto {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,16 +79,18 @@ body {
   color: #fff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.1rem;
-  
+
 }
 
-#editProfilePhoto{
+#editProfilePhoto {
   display: none;
 }
-.notification>button{
+
+.notification>button {
   background-color: #000;
   color: #fff;
 }
+
 .notification {
   position: absolute;
   width: 10rem;
@@ -101,7 +112,8 @@ body {
   border-radius: 0.2rem;
   cursor: pointer;
 }
-.notification > .appoinment {
+
+.notification>.appoinment {
   width: 1.5rem;
   height: 1.5rem;
   text-align: center;
@@ -111,12 +123,14 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
 .category {
   margin: 0 5rem;
   margin-top: 25rem;
   display: flex;
   flex-direction: row;
 }
+
 .information {
   display: flex;
   flex-direction: column;
@@ -124,12 +138,14 @@ body {
   border-radius: 0.1rem;
   width: 25rem;
 }
+
 .bio {
   margin: 1rem 2rem;
   position: relative;
 }
+
 /*---------------- Edit Profile-------------- */
-.dataEntry{
+.dataEntry {
   display: flex;
   flex-direction: column;
   top: 10%;
@@ -142,6 +158,7 @@ body {
   z-index: 100;
   position: fixed;
 }
+
 .closeEditProfile,
 .closeAddDoctorInfo,
 .closeEditDoctorInfo,
@@ -152,8 +169,7 @@ body {
 .closeEditProfilePhoto,
 .closeEditCoverPhoto,
 .closeAddCoverPhoto,
-.closeAddBloodG
-{
+.closeAddBloodG {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -163,127 +179,153 @@ body {
   cursor: pointer;
 
 }
-.dataEntry>.h1{
+
+.dataEntry>.h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.5rem;
   margin: 0.5rem;
   text-align: center;
 }
-.dataEntry>form{
+
+.dataEntry>form {
   display: flex;
   flex-direction: column;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .dataEntry>form>input,
 .dataEntry>form>textarea,
 .dataEntry>form>button,
-.dataEntry>form>select{
+.dataEntry>form>select {
   margin: 0.6rem;
-  width: 20rem!important;
+  width: 20rem !important;
   height: 3rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 0.9rem;
   padding: 0.5rem;
   outline: none;
 }
-.dataEntry>form>textarea{
+
+.dataEntry>form>textarea {
   height: 4rem !important;
 }
-.dataEntry>form>label{
+
+.dataEntry>form>label {
   font-size: 1.1rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .editProfilePhoto,
 .editCoverPhoto,
 .addCoverPhoto,
 .addProfilePhoto,
-.addBloodG{
+.addBloodG {
   height: 17rem;
 }
 
 .addDoctorInfo,
-.editDoctorInfo{
+.editDoctorInfo {
   height: 23rem;
   overflow: auto;
 }
-.editProfile{
+
+.editProfile {
   overflow: auto;
 }
 
-.editProfile{
+.editProfile {
   display: none;
 }
-.editDoctorInfo{
+
+.editDoctorInfo {
   display: none;
 }
-.addDoctorInfo{
+
+.addDoctorInfo {
   display: none;
 }
-.addBloodG{
+
+.addBloodG {
   display: none;
 }
-.addHospitalPhoto{
+
+.addHospitalPhoto {
   display: none;
 }
-.editHospitalPhoto{
+
+.editHospitalPhoto {
   display: none;
 }
-.editBlood{
+
+.editBlood {
   display: none;
 }
-.editProfilePhoto{
+
+.editProfilePhoto {
   display: none;
 }
-.editCoverPhoto{
+
+.editCoverPhoto {
   display: none;
 }
-.addCoverPhoto{
+
+.addCoverPhoto {
   display: none;
 }
-.addProfilePhoto{
+
+.addProfilePhoto {
   display: none;
 }
-.bio > #desc {
+
+.bio>#desc {
   margin-top: 0.5rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.bio > p {
+
+.bio>p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-top: 0.3rem;
   font-size: 1.2rem;
 }
-.bio > p > span {
+
+.bio>p>span {
   font-size: 1.5rem;
   color: #004e92;
 }
+
 .listOfPhoto {
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
 }
-.Hospitalphotos > .listOfPhoto > img {
+
+.Hospitalphotos>.listOfPhoto>img {
   width: 11rem;
   height: 10rem;
   margin: 0.1rem;
 }
-.heading{
+
+.heading {
   display: flex;
 }
-.heading>p{
+
+.heading>p {
   margin: 0 0.9rem;
 
 }
-.Hospitalphotos > p {
+
+.Hospitalphotos>p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1rem;
   margin-left: 1.1rem;
 }
-.bio > button {
+
+.bio>button {
   margin-top: 1rem;
   width: 20rem;
   height: 2rem;
@@ -296,6 +338,7 @@ body {
   margin-left: 1rem;
   width: 50rem;
 }
+
 .services {
   display: flex;
   flex-direction: row;
@@ -314,14 +357,16 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .addServices,
-.removeServices > p {
-  
+.removeServices>p {
+
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .heading {
-  
+
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -329,22 +374,26 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .addServices {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.addServices > .items,
-.removeServices > .items {
+
+.addServices>.items,
+.removeServices>.items {
   display: flex;
   flex-wrap: wrap;
 }
-.item>form>select{
+
+.item>form>select {
   width: 10rem;
   height: 2.3rem;
 }
-.item>form>button{
+
+.item>form>button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -360,6 +409,7 @@ body {
   cursor: pointer;
   font-size: 1rem;
 }
+
 .bloods {
   display: flex;
   flex-wrap: wrap;
@@ -374,15 +424,17 @@ body {
   width: 10rem;
   height: 10rem;
   background-color: #fff;
-  margin: 0 0.5rem;
+  margin: 0.5rem 0.5rem;
 }
-.blood > p {
+
+.blood>p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.3rem;
   margin: 0.8rem 0;
 }
-.blood > button {
+
+.blood>button {
   width: 5rem;
   height: 2rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
@@ -395,6 +447,7 @@ body {
   flex-direction: row;
   margin: 0 0.5rem;
 }
+
 .addDoctor {
   display: flex;
   justify-content: center;
@@ -406,9 +459,11 @@ body {
   margin: 0 0.5rem;
   cursor: pointer;
 }
-.addDoctor > p {
+
+.addDoctor>p {
   font-size: 3rem;
 }
+
 .doctor {
   display: flex;
   justify-content: center;
@@ -420,23 +475,27 @@ body {
   cursor: pointer;
   text-align: center;
 }
-.doctor > .doctorInfo {
+
+.doctor>.doctorInfo {
   text-align: center;
   font-family: 0.9rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.doctor > .doctorInfo > img {
+
+.doctor>.doctorInfo>img {
   width: 9rem;
   height: 9rem;
 }
-.doctor > .edit {
+
+.doctor>.edit {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.doctor > .edit > button {
+
+.doctor>.edit>button {
   width: 5rem;
   height: 2rem;
   margin: 0.1rem;

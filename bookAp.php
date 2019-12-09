@@ -1,5 +1,4 @@
 <?php
-$msg = "";
 if(isset($_POST['confirm'])){
     $uemail=$_POST['uemail'];
     $email=$_POST['email'];

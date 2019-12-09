@@ -36,14 +36,18 @@ include('../database/db.php');
 					}
 					else
 					{
-						echo "<p>Password not matched 
-						for the Email</p>";
+
+						echo "<script>
+						 alert('Username and Password Do not match');
+						</script>";
 					}
 				}
 				else
 				{
-					echo "<p>Sorry! Email Does not
-					Exists</p>";
+					echo "<script>
+					alert('Sorry! Email Does not
+					Exists');
+				   </script>";
 				}
 				
 			}
