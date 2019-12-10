@@ -141,7 +141,7 @@ include('./addDoctor.php');
             <input type="file" name="profile_photo" id="profile_photo" value="" require>
             <label for="cover_photo">Cover Photo</label>
             <input type="file" name="cover_photo" id="" value="" require>
-            <button type="editPhoto" name="editPhoto">Edit Doctor</button>
+            <button type="editPhoto" name="editPhoto">Edit Photos</button>
           </form>
       </div>
       <div class="addBloodG dataEntry">

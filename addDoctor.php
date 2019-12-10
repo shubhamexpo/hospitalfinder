@@ -113,7 +113,7 @@ if(isset($_POST['editPhoto'])){
       move_uploaded_file($filetmp5,$destinationFile5);
   }
 
-  $cover_photo = $_FILES['profile_photo'];
+  $cover_photo = $_FILES['cover_photo'];
 
   $fileName6 = $cover_photo['name'];
 
