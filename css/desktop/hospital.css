@@ -263,6 +263,10 @@ body {
   display: none;
 }
 
+#editBloodG {
+  cursor: pointer;
+}
+
 .editProfilePhoto {
   display: none;
 }
@@ -466,6 +470,7 @@ body {
 
 .doctor {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -477,6 +482,7 @@ body {
 }
 
 .doctor>.doctorInfo {
+  width: 15rem;
   text-align: center;
   font-family: 0.9rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
@@ -484,8 +490,8 @@ body {
 }
 
 .doctor>.doctorInfo>img {
-  width: 9rem;
-  height: 9rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .doctor>.edit {
@@ -496,8 +502,6 @@ body {
 }
 
 .doctor>.edit>button {
-  width: 5rem;
-  height: 2rem;
   margin: 0.1rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

@@ -352,6 +352,7 @@ include('./addDoctor.php');
               <p><?php echo $res5['blood_group_name'];?></p>
               <p><?php echo $res5['blood_quantity'];?></p>
               <a href="./view/editBlood.php?hospital_user_name=<?php echo $name?>&blood_quantity=<?php echo $res5['blood_quantity'];?>"><button name="editBloodG" id="editBloodG">Edit</button></a>
+              <a href="./deleteBlood.php?hospital_user_name=<?php echo $name?>&blood_quantity=<?php echo $res5['blood_quantity'];?>"><button name="deleteBloodG" id="editBloodG">Delete</button></a>
             </div>
                 <?php
                 }
