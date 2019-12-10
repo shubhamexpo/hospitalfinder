@@ -8,14 +8,9 @@ $result = mysqli_fetch_array($querydisplay);
 
 $hospital_id =  $result['hospital_id'];
 
-
-
-
 include('../addDoctor.php');
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -51,10 +46,10 @@ include('../addDoctor.php');
         <div class="profilePhoto">
           <img src="
           <?php if($result['profile_photo']){
-            echo ".".$result["cover_photo"];
+            echo ".".$result["profile_photo"];
           }else{
             
-            echo '../media/hospitalPhoto/hospitalCover.jpg';
+            echo '../media/hospitalPhoto/hospital.jpg';
             
           }
           ?>
@@ -74,41 +69,37 @@ include('../addDoctor.php');
             </p>
             <p>Phone: <span><?php echo $result['hospital_phone_number'];?></span></p>
             <p>Ambulance Number: <span><?php echo $result['hospital_ambulance_number'];?></span></p>
-            <p>
-              Address:
-              <span><?php echo $result['hospital_address'];?></span>
-            </p>
           </div>
           <div class="Hospitalphotos">
               <p>Photos</p>
             <div class="listOfPhoto">
               <img src="
-              <?php if($result['cover_photo']){
-            echo ".".$result["cover_photo"];
+              <?php if($result['photo1']){
+            echo ".".$result["photo1"];
           }else{
             echo "../media/hospitalPhoto/hospital.jpg";
           }
           ?>
               " alt="" />
               <img src="
-              <?php if($result['cover_photo']){
-            echo ".".$result["cover_photo"];
+              <?php if($result['photo2']){
+            echo ".".$result["photo2"];
           }else{
             echo "../media/hospitalPhoto/hospital.jpg";
           }
           ?>
               " alt="" />
               <img src="
-              <?php if($result['cover_photo']){
-            echo ".".$result["cover_photo"];
+              <?php if($result['photo3']){
+            echo ".".$result["photo3"];
           }else{
             echo "../media/hospitalPhoto/hospital.jpg";
           }
           ?>
               " alt="" />
               <img src="
-              <?php if($result['cover_photo']){
-            echo ".".$result["cover_photo"];
+              <?php if($result['photo4']){
+            echo ".".$result["photo4"];
           }else{
             echo "../media/hospitalPhoto/hospital.jpg";
           }
